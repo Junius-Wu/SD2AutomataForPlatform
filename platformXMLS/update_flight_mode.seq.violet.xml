@@ -1,0 +1,219 @@
+<SequenceDiagramGraph id="1">
+  <nodes id="2">
+    <LifelineNode id="3">
+      <children id="4">
+        <ActivationBarNode id="5">
+          <children id="6">
+            <ActivationBarNode id="7">
+              <children id="8"/>
+              <parent class="ActivationBarNode" reference="5"/>
+              <location class="Point2D.Double" id="9" x="8.0" y="33.0"/>
+              <backgroundColor id="10">
+                <red>255</red>
+                <green>255</green>
+                <blue>255</blue>
+                <alpha>255</alpha>
+              </backgroundColor>
+              <borderColor id="11">
+                <red>191</red>
+                <green>191</green>
+                <blue>191</blue>
+                <alpha>255</alpha>
+              </borderColor>
+              <textColor id="12">
+                <red>51</red>
+                <green>51</green>
+                <blue>51</blue>
+                <alpha>255</alpha>
+              </textColor>
+            </ActivationBarNode>
+            <ActivationBarNode id="13">
+              <children id="14"/>
+              <parent class="ActivationBarNode" reference="5"/>
+              <location class="Point2D.Double" id="15" x="8.0" y="313.0"/>
+              <backgroundColor reference="10"/>
+              <borderColor reference="11"/>
+              <textColor reference="12"/>
+            </ActivationBarNode>
+            <ActivationBarNode id="16">
+              <children id="17"/>
+              <parent class="ActivationBarNode" reference="5"/>
+              <location class="Point2D.Double" id="18" x="8.0" y="436.0"/>
+              <backgroundColor reference="10"/>
+              <borderColor reference="11"/>
+              <textColor reference="12"/>
+            </ActivationBarNode>
+          </children>
+          <parent class="LifelineNode" reference="3"/>
+          <location class="Point2D.Double" id="19" x="32.0" y="94.0"/>
+          <ID>EAID_5f17cfd0-7bdc-4edf-9fce-02b9723571dc</ID>
+          <idN id="20"/>
+          <backgroundColor reference="10"/>
+          <borderColor reference="11"/>
+          <textColor reference="12"/>
+        </ActivationBarNode>
+      </children>
+      <location class="Point2D.Double" id="21" x="205.0" y="0.0"/>
+      <ID>EAID_4546cf5f-4f2a-4e18-84e1-c30b9ef9921b</ID>
+      <idN id="22"/>
+      <backgroundColor reference="10"/>
+      <borderColor reference="11"/>
+      <textColor reference="12"/>
+      <name id="23">
+        <text>copter</text>
+      </name>
+      <width>80.0</width>
+    </LifelineNode>
+    <LifelineNode id="24">
+      <children id="25"/>
+      <location class="Point2D.Double" id="26" x="466.0" y="29.0"/>
+      <ID>EAID_dce492db-f380-434d-80b5-0f02c1d25997</ID>
+      <idN id="27"/>
+      <backgroundColor reference="10"/>
+      <borderColor reference="11"/>
+      <textColor reference="12"/>
+      <name id="28">
+        <text>attitude_control</text>
+      </name>
+      <width>88.0</width>
+    </LifelineNode>
+    <CombinedFragment id="29">
+      <children id="30"/>
+      <location class="Point2D.Double" id="31" x="167.0" y="243.0"/>
+      <ID>EAID_48b30876-99b2-4810-9205-04463af02f65</ID>
+      <idN id="32"/>
+      <backgroundColor reference="10"/>
+      <borderColor reference="11"/>
+      <textColor reference="12"/>
+      <type id="33" name="ALT"/>
+      <conditions id="34">
+        <string>control_mode==0#int8_t</string>
+        <string>control_mode==1#int8_t</string>
+        <string>control_mode==2#int8_t</string>
+      </conditions>
+      <fragmentParts id="35">
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="36">
+          <conditionText>control_mode==0#int8_t</conditionText>
+          <coveredMessagesID id="37"/>
+          <borderline class="java.awt.geom.Line2D$Double" id="38">
+            <x1>167.0</x1>
+            <y1>243.0</y1>
+            <x2>596.0</x2>
+            <y2>243.0</y2>
+          </borderline>
+          <nestingChildNodesID id="39">
+            <string>EAID_5c382bb6-c576-4cd5-804f-7eae9a097a00</string>
+          </nestingChildNodesID>
+          <borderlinehaschanged>false</borderlinehaschanged>
+          <size>126.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="40">
+          <conditionText>control_mode==1#int8_t</conditionText>
+          <coveredMessagesID id="41">
+            <string>EAID_1be3f1b7-3d6e-4799-a3c7-65f3d13fea13</string>
+          </coveredMessagesID>
+          <borderline class="java.awt.geom.Line2D$Double" id="42">
+            <x1>167.0</x1>
+            <y1>369.0</y1>
+            <x2>596.0</x2>
+            <y2>369.0</y2>
+          </borderline>
+          <nestingChildNodesID id="43"/>
+          <borderlinehaschanged>true</borderlinehaschanged>
+          <size>123.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="44">
+          <conditionText>control_mode==2#int8_t</conditionText>
+          <coveredMessagesID id="45">
+            <string>EAID_8d33686a-3435-4631-bac2-ec7fa66f7520</string>
+          </coveredMessagesID>
+          <borderline class="java.awt.geom.Line2D$Double" id="46">
+            <x1>167.0</x1>
+            <y1>492.0</y1>
+            <x2>596.0</x2>
+            <y2>492.0</y2>
+          </borderline>
+          <nestingChildNodesID id="47"/>
+          <borderlinehaschanged>true</borderlinehaschanged>
+          <size>123.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+      </fragmentParts>
+      <width>429.0</width>
+      <height>372.0</height>
+    </CombinedFragment>
+    <CombinedFragment id="48">
+      <children id="49"/>
+      <location class="Point2D.Double" id="50" x="202.0" y="289.0"/>
+      <ID>EAID_5c382bb6-c576-4cd5-804f-7eae9a097a00</ID>
+      <idN id="51"/>
+      <backgroundColor reference="10"/>
+      <borderColor reference="11"/>
+      <textColor reference="12"/>
+      <type id="52" name="REF"/>
+      <conditions id="53">
+        <string>stabilize_run</string>
+      </conditions>
+      <fragmentParts id="54">
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="55">
+          <conditionText>stabilize_run</conditionText>
+          <coveredMessagesID id="56"/>
+          <borderline class="java.awt.geom.Line2D$Double" id="57">
+            <x1>202.0</x1>
+            <y1>289.0</y1>
+            <x2>559.0</x2>
+            <y2>289.0</y2>
+          </borderline>
+          <nestingChildNodesID id="58"/>
+          <borderlinehaschanged>false</borderlinehaschanged>
+          <size>63.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+      </fragmentParts>
+      <width>357.0</width>
+      <height>63.0</height>
+    </CombinedFragment>
+  </nodes>
+  <edges id="59">
+    <CallEdge id="60">
+      <start class="ActivationBarNode" reference="5"/>
+      <end class="ActivationBarNode" reference="7"/>
+      <startLocation class="Point2D.Double" id="61" x="253.0" y="117.0"/>
+      <endLocation class="Point2D.Double" id="62" x="276.0" y="117.0"/>
+      <idE id="63"/>
+      <ID>EAID_68af9a99-60b4-44d0-9263-033adbd55f1d</ID>
+      <input></input>
+      <parameter></parameter>
+      <output></output>
+      <name>update_flight_mode()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="64">
+      <start class="ActivationBarNode" reference="5"/>
+      <end class="ActivationBarNode" reference="13"/>
+      <startLocation class="Point2D.Double" id="65" x="253.0" y="397.0"/>
+      <endLocation class="Point2D.Double" id="66" x="276.0" y="397.0"/>
+      <idE id="67"/>
+      <ID>EAID_1be3f1b7-3d6e-4799-a3c7-65f3d13fea13</ID>
+      <input></input>
+      <parameter></parameter>
+      <output></output>
+      <name>acro_run()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="68">
+      <start class="ActivationBarNode" reference="5"/>
+      <end class="ActivationBarNode" reference="16"/>
+      <startLocation class="Point2D.Double" id="69" x="253.0" y="520.0"/>
+      <endLocation class="Point2D.Double" id="70" x="276.0" y="520.0"/>
+      <idE id="71"/>
+      <ID>EAID_8d33686a-3435-4631-bac2-ec7fa66f7520</ID>
+      <input></input>
+      <parameter></parameter>
+      <output></output>
+      <name>althold_run()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+  </edges>
+</SequenceDiagramGraph>

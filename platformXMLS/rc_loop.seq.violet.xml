@@ -1,0 +1,243 @@
+<SequenceDiagramGraph id="1">
+  <nodes id="2">
+    <LifelineNode id="3">
+      <children id="4"/>
+      <location class="Point2D.Double" id="5" x="227.0" y="41.0"/>
+      <ID>EAID_8f675863-8764-4a23-8bf6-e772c69f4d06</ID>
+      <idN id="6"/>
+      <backgroundColor id="7">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </backgroundColor>
+      <borderColor id="8">
+        <red>191</red>
+        <green>191</green>
+        <blue>191</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <textColor id="9">
+        <red>51</red>
+        <green>51</green>
+        <blue>51</blue>
+        <alpha>255</alpha>
+      </textColor>
+      <name id="10">
+        <text>hal.scheduler</text>
+      </name>
+      <width>80.0</width>
+    </LifelineNode>
+    <LifelineNode id="11">
+      <children id="12">
+        <ActivationBarNode id="13">
+          <children id="14"/>
+          <parent class="LifelineNode" reference="11"/>
+          <location class="Point2D.Double" id="15" x="32.0" y="91.0"/>
+          <ID>EAID_f18c6985-3d42-4a48-b714-0bd33deea0d1</ID>
+          <idN id="16"/>
+          <backgroundColor reference="7"/>
+          <borderColor reference="8"/>
+          <textColor reference="9"/>
+        </ActivationBarNode>
+      </children>
+      <location class="Point2D.Double" id="17" x="480.0" y="48.0"/>
+      <ID>EAID_718fea3d-cae3-444c-93e2-3307a2493be9</ID>
+      <idN id="18"/>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="9"/>
+      <name id="19">
+        <text>scheduler</text>
+      </name>
+      <width>80.0</width>
+    </LifelineNode>
+    <LifelineNode id="20">
+      <children id="21">
+        <ActivationBarNode id="22">
+          <children id="23">
+            <ActivationBarNode id="24">
+              <children id="25"/>
+              <parent class="ActivationBarNode" reference="22"/>
+              <location class="Point2D.Double" id="26" x="8.0" y="71.0"/>
+              <backgroundColor reference="7"/>
+              <borderColor reference="8"/>
+              <textColor reference="9"/>
+            </ActivationBarNode>
+            <ActivationBarNode id="27">
+              <children id="28"/>
+              <parent class="ActivationBarNode" reference="22"/>
+              <location class="Point2D.Double" id="29" x="8.0" y="269.59047811862627"/>
+              <backgroundColor reference="7"/>
+              <borderColor reference="8"/>
+              <textColor reference="9"/>
+            </ActivationBarNode>
+            <ActivationBarNode id="30">
+              <children id="31"/>
+              <parent class="ActivationBarNode" reference="22"/>
+              <location class="Point2D.Double" id="32" x="8.0" y="352.0"/>
+              <backgroundColor reference="7"/>
+              <borderColor reference="8"/>
+              <textColor reference="9"/>
+            </ActivationBarNode>
+            <ActivationBarNode id="33">
+              <children id="34"/>
+              <parent class="ActivationBarNode" reference="22"/>
+              <location class="Point2D.Double" id="35" x="8.0" y="497.2296811017943"/>
+              <backgroundColor reference="7"/>
+              <borderColor reference="8"/>
+              <textColor reference="9"/>
+            </ActivationBarNode>
+          </children>
+          <parent class="LifelineNode" reference="20"/>
+          <location class="Point2D.Double" id="36" x="32.0" y="107.0"/>
+          <backgroundColor reference="7"/>
+          <borderColor reference="8"/>
+          <textColor reference="9"/>
+        </ActivationBarNode>
+      </children>
+      <location class="Point2D.Double" id="37" x="682.0" y="35.0"/>
+      <ID>EAID_60484e64-26b7-46f2-a405-7d22943c4386</ID>
+      <idN id="38"/>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="9"/>
+      <name id="39">
+        <text>copter</text>
+      </name>
+      <width>80.0</width>
+    </LifelineNode>
+    <CombinedFragment id="40">
+      <children id="41"/>
+      <location class="Point2D.Double" id="42" x="207.0" y="240.0"/>
+      <ID>EAID_e50c03fc-2177-48c0-a28d-950678fcfcc0</ID>
+      <idN id="43"/>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="9"/>
+      <type id="44" name="REF"/>
+      <conditions id="45">
+        <string>read_radio</string>
+      </conditions>
+      <fragmentParts id="46">
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="47">
+          <conditionText>read_radio</conditionText>
+          <coveredMessagesID id="48"/>
+          <borderline class="java.awt.geom.Line2D$Double" id="49">
+            <x1>207.0</x1>
+            <y1>240.0</y1>
+            <x2>807.0</x2>
+            <y2>240.0</y2>
+          </borderline>
+          <nestingChildNodesID id="50"/>
+          <borderlinehaschanged>false</borderlinehaschanged>
+          <size>100.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+      </fragmentParts>
+      <width>600.0</width>
+      <height>100.0</height>
+    </CombinedFragment>
+    <CombinedFragment id="51">
+      <children id="52"/>
+      <location class="Point2D.Double" id="53" x="633.0" y="555.0"/>
+      <ID>EAID_f90b2d3c-b1f6-44e1-92e4-b741d6e367d1</ID>
+      <idN id="54"/>
+      <backgroundColor reference="7"/>
+      <borderColor reference="8"/>
+      <textColor reference="9"/>
+      <type id="55" name="OPT"/>
+      <conditions id="56">
+        <string>control_switch_changed==True &amp;&amp; sufficient_time_elapsed==True &amp;&amp; failsafe_disengaged==True#control_switch_changed:bool,sufficient_time_elapsed:bool,failsafe_disengaged:bool</string>
+      </conditions>
+      <fragmentParts id="57">
+        <com.horstmann.violet.product.diagram.abstracts.property.FragmentPart id="58">
+          <conditionText>control_switch_changed==True &amp;&amp; sufficient_time_elapsed==True &amp;&amp; failsafe_disengaged==True#control_switch_changed:bool,sufficient_time_elapsed:bool,failsafe_disengaged:bool</conditionText>
+          <coveredMessagesID id="59"/>
+          <borderline class="java.awt.geom.Line2D$Double" id="60">
+            <x1>633.0</x1>
+            <y1>555.0</y1>
+            <x2>833.0</x2>
+            <y2>555.0</y2>
+          </borderline>
+          <nestingChildNodesID id="61"/>
+          <borderlinehaschanged>false</borderlinehaschanged>
+          <size>100.0</size>
+        </com.horstmann.violet.product.diagram.abstracts.property.FragmentPart>
+      </fragmentParts>
+      <width>200.0</width>
+      <height>100.0</height>
+    </CombinedFragment>
+  </nodes>
+  <edges id="62">
+    <CallEdge id="63">
+      <start class="ActivationBarNode" reference="13"/>
+      <end class="ActivationBarNode" reference="22"/>
+      <startLocation class="Point2D.Double" id="64" x="528.0" y="107.0"/>
+      <endLocation class="Point2D.Double" id="65" x="714.0" y="107.0"/>
+      <idE id="66"/>
+      <ID>EAID_b85aeaf4-c9dd-4eb8-b49f-ea6f28e89e24</ID>
+      <input></input>
+      <parameter></parameter>
+      <output></output>
+      <name>rc_loop()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="67">
+      <start class="ActivationBarNode" reference="22"/>
+      <end class="ActivationBarNode" reference="24"/>
+      <startLocation class="Point2D.Double" id="68" x="730.0" y="168.0"/>
+      <endLocation class="Point2D.Double" id="69" x="753.0" y="168.0"/>
+      <idE id="70"/>
+      <ID>EAID_26d55083-3ddd-4dff-9248-739aa035a578</ID>
+      <input>has_new_input#has_new_input:bool</input>
+      <parameter></parameter>
+      <output></output>
+      <name>read_radio()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="71">
+      <start class="ActivationBarNode" reference="22"/>
+      <end class="ActivationBarNode" reference="27"/>
+      <startLocation class="Point2D.Double" id="72" x="730.0" y="366.59047811862627"/>
+      <endLocation class="Point2D.Double" id="73" x="753.0" y="366.59047811862627"/>
+      <idE id="74"/>
+      <ID>EAID_b9dca79d-d740-45c0-908f-ed519d1d0bc3</ID>
+      <input>800&lt;=g.rc_5.radio_in&lt;=2200#g.rc_5.radio_in:int16_t</input>
+      <parameter></parameter>
+      <output></output>
+      <name>read_control_switch()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="75">
+      <start class="ActivationBarNode" reference="22"/>
+      <end class="ActivationBarNode" reference="30"/>
+      <startLocation class="Point2D.Double" id="76" x="730.0" y="449.0"/>
+      <endLocation class="Point2D.Double" id="77" x="753.0" y="449.0"/>
+      <idE id="78"/>
+      <ID>EAID_105797fb-46d2-45f7-b6e8-11ec72daea09</ID>
+      <input>tnow_ms#tnow_ms:uint32_t</input>
+      <parameter></parameter>
+      <output></output>
+      <name>millis()</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+    <CallEdge id="79">
+      <start class="ActivationBarNode" reference="22"/>
+      <end class="ActivationBarNode" reference="33"/>
+      <startLocation class="Point2D.Double" id="80" x="730.0" y="594.2296811017943"/>
+      <endLocation class="Point2D.Double" id="81" x="753.0" y="594.2296811017943"/>
+      <idE id="82"/>
+      <ID>EAID_2cc8e191-280c-43c6-bca6-902b28cd7124</ID>
+      <input></input>
+      <parameter></parameter>
+      <output>control_mode,set_mode_success#control_mode:uint8_t,set_mode_success:bool</output>
+      <name>set_mode(unsigned char)</name>
+      <timing></timing>
+      <signal>false</signal>
+    </CallEdge>
+  </edges>
+</SequenceDiagramGraph>
